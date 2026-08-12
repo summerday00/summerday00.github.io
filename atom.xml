@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>big rain</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://summerday00.github.io/</id>
+  <link href="https://summerday00.github.io/" rel="alternate"/>
+  <link href="https://summerday00.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, big rain</rights>
+  <subtitle>大雨的个人博客</subtitle>
+  <title>滴滴答答</title>
+  <updated>2026-08-04T17:11:11.104Z</updated>
+  <entry>
+    <author>
+      <name>big rain</name>
+    </author>
+    <category term="ganwu" scheme="https://summerday00.github.io/categories/ganwu/"/>
+    <category term="ganwu" scheme="https://summerday00.github.io/tags/ganwu/"/>
+    <id>https://summerday00.github.io/2026/08/04/first-article/</id>
+    <link href="https://summerday00.github.io/2026/08/04/first-article/"/>
+    <published>2026-08-04T15:37:33.000Z</published>
+    <title>first article</title>
+    <updated>2026-08-04T17:11:11.104Z</updated>
+  </entry>
+</feed>
