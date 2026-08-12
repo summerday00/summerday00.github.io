@@ -1,0 +1,137 @@
+// ==================================================
+// 自定义配色与样式（雨·蓝灰主题）
+// ==================================================
+
+:root {
+  --body-bg-color: #eef3f7;
+  --content-bg-color: #ffffff;
+  --card-bg-color: #ffffff;
+  --text-color: #334155;
+  --link-color: #0e7490;
+  --link-hover-color: #155e75;
+  --brand-color: #0e7490;
+  --brand-hover-color: #155e75;
+  --selection-bg: #0e7490;
+  --selection-color: #ffffff;
+  --blockquote-color: #64748b;
+  --menu-item-bg-color: #ffffff;
+  --theme-color: #0e7490;
+  --btn-default-bg: #ffffff;
+  --btn-default-color: #0e7490;
+  --btn-default-border-color: #0e7490;
+  --btn-default-hover-bg: #0e7490;
+  --btn-default-hover-color: #ffffff;
+  --btn-default-hover-border-color: #0e7490;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: #0f172a;
+    --content-bg-color: #1e293b;
+    --card-bg-color: #1e293b;
+    --text-color: #cbd5e1;
+    --link-color: #38bdf8;
+    --link-hover-color: #7dd3fc;
+    --brand-color: #38bdf8;
+    --brand-hover-color: #7dd3fc;
+    --selection-bg: #38bdf8;
+    --selection-color: #0f172a;
+    --blockquote-color: #94a3b8;
+    --menu-item-bg-color: #1e293b;
+    --theme-color: #38bdf8;
+    --btn-default-bg: #1e293b;
+    --btn-default-color: #38bdf8;
+    --btn-default-border-color: #38bdf8;
+    --btn-default-hover-bg: #38bdf8;
+    --btn-default-hover-color: #0f172a;
+    --btn-default-hover-border-color: #38bdf8;
+  }
+}
+
+// 圆角卡片与柔和阴影
+.post-block,
+.posts-expand .post-block,
+.sidebar,
+.header,
+.footer {
+  border-radius: 12px;
+}
+
+.post-block,
+.sidebar,
+.header,
+.footer {
+  box-shadow: 0 4px 20px rgba(15, 23, 42, .07);
+}
+
+// 站点地图页
+.sitemap-page {
+  .sitemap-intro {
+    color: var(--blockquote-color);
+    margin-bottom: 1.5em;
+  }
+
+  .sitemap-section {
+    margin-bottom: 1.8em;
+  }
+
+  .sitemap-year {
+    font-size: 1.25em;
+    padding-bottom: .4em;
+    border-bottom: 2px solid var(--theme-color);
+    display: inline-block;
+    margin-bottom: .8em;
+  }
+
+  .sitemap-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding: .55em .9em;
+      margin-bottom: .35em;
+      background: var(--card-bg-color);
+      border: 1px solid rgba(100, 116, 139, .18);
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        border-color: var(--theme-color);
+        transform: translateX(4px);
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--link-hover-color);
+        }
+      }
+
+      .sitemap-meta {
+        color: var(--blockquote-color);
+        font-size: .85em;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+// 视频与音乐
+.post-body video {
+  width: 100%;
+  max-height: 480px;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, .15);
+}
+
+.aplayer {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, .08);
+}

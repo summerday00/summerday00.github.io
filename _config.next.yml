@@ -12,7 +12,8 @@ menu:
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   links: /links/ || fa fa-link
-  sitemap: /sitemap.xml || fa fa-sitemap
+  媒体: /media/ || fa fa-music
+  sitemap: /sitemap/ || fa fa-sitemap
 
 # 侧边栏头像（使用 GitHub 头像，可随时换成本地图片）
 avatar:
@@ -77,6 +78,11 @@ back2top:
   enable: true
   sidebar: false
   scrollpercent: true
+
+# 浏览器标签栏颜色
+theme_color:
+  light: "#0e7490"
+  dark: "#38bdf8"
 
 # 文章底部显示知识共享许可
 creative_commons:

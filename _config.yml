@@ -133,3 +133,8 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+
+# hexo-tag-aplayer（音乐播放器）
+aplayer:
+  asset_inject: true
+  meting: false
