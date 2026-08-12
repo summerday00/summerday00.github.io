@@ -1,0 +1,87 @@
+# ================================================================
+# NexT 主题覆盖配置
+# 此文件会自动与 themes/next/_config.yml 合并，优先级更高
+# 参考: https://theme-next.js.org/docs/getting-started/configuration
+# ================================================================
+
+# 菜单
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  links: /links/ || fa fa-link
+  sitemap: /sitemap.xml || fa fa-sitemap
+
+# 侧边栏头像（使用 GitHub 头像，可随时换成本地图片）
+avatar:
+  url: https://github.com/summerday00.png
+  rounded: true
+  rotated: false
+
+# 社交链接
+social:
+  GitHub: https://github.com/summerday00 || fab fa-github
+  RSS: /atom.xml || fa fa-rss
+
+social_icons:
+  enable: true
+  icons_only: false
+  transition: false
+
+# 页脚
+footer:
+  since: 2026
+  powered: true
+
+# 首页标题带上副标题
+index_with_subtitle: true
+
+# 代码块体验：复制按钮 / 折叠 / 显示语言
+codeblock:
+  theme:
+    light: default
+    dark: stackoverflow-dark
+  copy_button:
+    enable: true
+    style: mac
+  fold:
+    enable: true
+    height: 500
+  language: true
+
+# 阅读进度条
+reading_progress:
+  enable: true
+  start_at: left
+  position: top
+  reversed: false
+  color: "#37c6c0"
+  height: 3px
+
+# 书签（记住阅读位置）
+bookmark:
+  enable: true
+  color: "#222"
+  save: auto
+
+# 图片灯箱（mediumzoom 轻量，fancybox 二选一）
+mediumzoom: true
+
+# 中英文之间自动加空格（依赖 hexo-pangu）
+pangu: true
+
+# 回到顶部显示滚动百分比
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+# 文章底部显示知识共享许可
+creative_commons:
+  license: by-nc-sa
+  size: small
+  sidebar: false
+  post: true
+  language: zh-CN
