@@ -17,9 +17,15 @@
     </author>
     <category term="ganwu" scheme="https://summerday00.github.io/categories/ganwu/"/>
     <category term="ganwu" scheme="https://summerday00.github.io/tags/ganwu/"/>
+    <content>
+      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]>
+    </content>
     <id>https://summerday00.github.io/2026/08/04/first-article/</id>
     <link href="https://summerday00.github.io/2026/08/04/first-article/"/>
     <published>2026-08-04T15:37:33.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" cla]]>
+    </summary>
     <title>first article</title>
     <updated>2026-08-04T17:11:11.104Z</updated>
   </entry>
