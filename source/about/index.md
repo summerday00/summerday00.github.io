@@ -15,6 +15,6 @@ date: 2026-08-12 10:00:00
 ## 关于博客
 
 - 使用 [Hexo](https://hexo.io/) + [NexT](https://theme-next.js.org/) 搭建
-- 部署在 Cloudflare Pages，并通过 Cloudflare Access 保护私密内容
+- 部署在 GitHub Pages
 
 如果你有任何想交流的内容，欢迎通过 GitHub 联系我。

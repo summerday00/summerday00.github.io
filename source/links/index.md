@@ -10,7 +10,7 @@ date: 2026-08-12 10:00:00
 站点地址: https://example.com
 ```
 
-也可以直接编辑 [links/index.md](https://github.com/summerday00/summerday00.github.io/blob/master/source/links/index.md) 提交。
+也可以直接通过 [GitHub](https://github.com/summerday00) 联系我提交。
 
 ## 我的友链
 
