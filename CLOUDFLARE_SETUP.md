@@ -4,19 +4,21 @@
 
 ## 一、把源码放进 Git（必须做）
 
-博客源码目前没有纳入版本管理，Cloudflare Pages 需要连接一个 GitHub 仓库来构建。
+Cloudflare Pages 需要连接一个 GitHub 仓库来构建。本仓库已完成此步骤：
 
-1. 在 GitHub 上创建一个 **私有** 仓库（例如 `blog-source`）。必须私有：因为日记源码也会放在这个仓库里。
+1. 在 GitHub 上创建一个 **私有** 仓库（本项目使用 `summerday00/Blog_Source`）。必须私有：因为日记源码也会放在这个仓库里。
 2. 处理 `themes/next` 目录：它本身是一个 NexT 主题的 Git 克隆，直接 `git add .` 会被 Git 当成子模块，导致主题文件推不上去、Cloudflare 构建失败。
    - 推荐做法：删除 `themes/next/.git`（只删这个隐藏目录，主题文件不受影响；NexT 是开源主题，随时可以从 GitHub 重新获取）。
-   - 删除后执行：
+   - 本项目已完成该操作，并已推送到 `summerday00/Blog_Source`。
+
+如果换到新机器重新初始化，参考以下命令：
 
 ```bash
 git init
 git add .
 git commit -m "chore: init blog source"
 git branch -M main
-git remote add origin https://github.com/<你的用户名>/blog-source.git
+git remote add origin https://github.com/summerday00/Blog_Source.git
 git push -u origin main
 ```
 
