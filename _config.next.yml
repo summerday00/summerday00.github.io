@@ -42,8 +42,8 @@ index_with_subtitle: true
 # 代码块体验：复制按钮 / 折叠 / 显示语言
 codeblock:
   theme:
-    light: default
-    dark: stackoverflow-dark
+    light: github
+    dark: atom-one-dark
   copy_button:
     enable: true
     style: mac
@@ -81,8 +81,8 @@ back2top:
 
 # 浏览器标签栏颜色
 theme_color:
-  light: "#0e7490"
-  dark: "#38bdf8"
+  light: "#f6f4ef"
+  dark: "#141519"
 
 # ---------------------------------------------------------------
 # 统计

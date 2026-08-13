@@ -1,67 +1,132 @@
 // ==================================================
-// 自定义配色与样式（雨·蓝灰主题）
+// 自定义配色与样式
+// 主题：纸墨金
+//   浅色 = 暖纸白 + 墨色 + 古铜金
+//   深色 = 炭黑 + 香槟金
 // ==================================================
 
 :root {
-  --body-bg-color: #eef3f7;
+  --body-bg-color: #f6f4ef;
   --content-bg-color: #ffffff;
   --card-bg-color: #ffffff;
-  --text-color: #334155;
-  --link-color: #0e7490;
-  --link-hover-color: #155e75;
-  --brand-color: #0e7490;
-  --brand-hover-color: #155e75;
-  --selection-bg: #0e7490;
-  --selection-color: #ffffff;
-  --blockquote-color: #64748b;
+  --text-color: #3d3b36;
+  --link-color: #7a5c2e;
+  --link-hover-color: #5f4621;
+  --brand-color: #7a5c2e;
+  --brand-hover-color: #5f4621;
+  --selection-bg: #e7d9bd;
+  --selection-color: #2b2a27;
+  --blockquote-color: #8b8577;
   --menu-item-bg-color: #ffffff;
-  --theme-color: #0e7490;
+  --theme-color: #7a5c2e;
   --btn-default-bg: #ffffff;
-  --btn-default-color: #0e7490;
-  --btn-default-border-color: #0e7490;
-  --btn-default-hover-bg: #0e7490;
+  --btn-default-color: #7a5c2e;
+  --btn-default-border-color: #7a5c2e;
+  --btn-default-hover-bg: #7a5c2e;
   --btn-default-hover-color: #ffffff;
-  --btn-default-hover-border-color: #0e7490;
+  --btn-default-hover-border-color: #7a5c2e;
+  --highlight-background: #faf8f4;
+  --highlight-foreground: #45423c;
+  --highlight-gutter-background: #f2eee6;
+  --highlight-gutter-foreground: #9a9284;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-bg-color: #0f172a;
-    --content-bg-color: #1e293b;
-    --card-bg-color: #1e293b;
-    --text-color: #cbd5e1;
-    --link-color: #38bdf8;
-    --link-hover-color: #7dd3fc;
-    --brand-color: #38bdf8;
-    --brand-hover-color: #7dd3fc;
-    --selection-bg: #38bdf8;
-    --selection-color: #0f172a;
-    --blockquote-color: #94a3b8;
-    --menu-item-bg-color: #1e293b;
-    --theme-color: #38bdf8;
-    --btn-default-bg: #1e293b;
-    --btn-default-color: #38bdf8;
-    --btn-default-border-color: #38bdf8;
-    --btn-default-hover-bg: #38bdf8;
-    --btn-default-hover-color: #0f172a;
-    --btn-default-hover-border-color: #38bdf8;
+    --body-bg-color: #141519;
+    --content-bg-color: #1b1d22;
+    --card-bg-color: #1b1d22;
+    --text-color: #d8d4cc;
+    --link-color: #c9a876;
+    --link-hover-color: #e0c393;
+    --brand-color: #c9a876;
+    --brand-hover-color: #e0c393;
+    --selection-bg: #c9a876;
+    --selection-color: #141519;
+    --blockquote-color: #9a9387;
+    --menu-item-bg-color: #1b1d22;
+    --theme-color: #c9a876;
+    --btn-default-bg: #1b1d22;
+    --btn-default-color: #c9a876;
+    --btn-default-border-color: #c9a876;
+    --btn-default-hover-bg: #c9a876;
+    --btn-default-hover-color: #141519;
+    --btn-default-hover-border-color: #c9a876;
+    --highlight-background: #1a1d23;
+    --highlight-foreground: #c9c6c0;
+    --highlight-gutter-background: #16181d;
+    --highlight-gutter-foreground: #6f737b;
   }
 }
 
-// 圆角卡片与柔和阴影
+// 背景：极淡的纸感渐变
+body {
+  background: linear-gradient(180deg, #f8f6f1 0%, #f3f0e9 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(180deg, #16171b 0%, #101114 100%);
+  }
+}
+
+// 字体：正文无衬线，标题衬线（本地字体，不依赖外网）
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.site-title,
+.post-title,
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6,
+.sitemap-year {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', 'Noto Serif SC', 'STSong', serif;
+}
+
+// 站点标题：金色渐变 + 字距
+.site-title {
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #7a5c2e, #b3925c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-title {
+    background: linear-gradient(90deg, #c9a876, #ecd9ae);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+
+// 卡片：细边框 + 轻阴影，代替原来的重阴影
 .post-block,
 .posts-expand .post-block,
 .sidebar,
 .header,
 .footer {
-  border-radius: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(125, 115, 95, .12);
+  box-shadow: 0 1px 2px rgba(20, 21, 25, .04), 0 8px 24px rgba(20, 21, 25, .05);
 }
 
-.post-block,
-.sidebar,
-.header,
-.footer {
-  box-shadow: 0 4px 20px rgba(15, 23, 42, .07);
+@media (prefers-color-scheme: dark) {
+  .post-block,
+  .posts-expand .post-block,
+  .sidebar,
+  .header,
+  .footer {
+    border-color: rgba(255, 255, 255, .07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  }
 }
 
 // 站点地图页
@@ -91,7 +156,7 @@
       padding: .55em .9em;
       margin-bottom: .35em;
       background: var(--card-bg-color);
-      border: 1px solid rgba(100, 116, 139, .18);
+      border: 1px solid rgba(125, 115, 95, .16);
       border-radius: 8px;
       display: flex;
       justify-content: space-between;
@@ -128,10 +193,11 @@
   max-height: 480px;
   border-radius: 12px;
   background: #000;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, .15);
+  box-shadow: 0 4px 16px rgba(20, 21, 25, .14);
 }
 
 .aplayer {
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, .08);
+  border: 1px solid rgba(125, 115, 95, .14);
+  box-shadow: 0 4px 16px rgba(20, 21, 25, .08);
 }
