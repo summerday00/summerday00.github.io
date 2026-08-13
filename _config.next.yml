@@ -84,6 +84,18 @@ theme_color:
   light: "#0e7490"
   dark: "#38bdf8"
 
+# ---------------------------------------------------------------
+# 统计
+# ---------------------------------------------------------------
+
+# Microsoft Clarity（真实访问统计）
+# 待用户提供 Project ID，格式例如：abcdef1234567890
+clarity_analytics:
+
+# 不蒜子计数器的数据不够真实，暂时关闭页面上的访问量/访客数展示
+busuanzi_count:
+  enable: false
+
 # 文章底部显示知识共享许可
 creative_commons:
   license: by-nc-sa
