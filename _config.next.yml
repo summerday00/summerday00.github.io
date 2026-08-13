@@ -89,8 +89,7 @@ theme_color:
 # ---------------------------------------------------------------
 
 # Microsoft Clarity（真实访问统计）
-# 待用户提供 Project ID，格式例如：abcdef1234567890
-clarity_analytics:
+clarity_analytics: y1jem7l0qy
 
 # 不蒜子计数器的数据不够真实，暂时关闭页面上的访问量/访客数展示
 busuanzi_count:
