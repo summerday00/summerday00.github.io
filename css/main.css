@@ -13,17 +13,17 @@
   --table-row-odd-bg-color: #f9f9f9;
   --table-row-hover-bg-color: #f5f5f5;
   --menu-item-bg-color: #f5f5f5;
-  --theme-color: #0e7490;
+  --theme-color: #f6f4ef;
   --btn-default-bg: #fff;
   --btn-default-color: #555;
   --btn-default-border-color: #555;
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #f3f3f3;
-  --highlight-foreground: #444;
-  --highlight-gutter-background: #e1e1e1;
-  --highlight-gutter-foreground: #555;
+  --highlight-background: #fff;
+  --highlight-foreground: #24292e;
+  --highlight-gutter-background: #e9e9ea;
+  --highlight-gutter-foreground: #393e42;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -42,17 +42,17 @@
     --table-row-odd-bg-color: #282828;
     --table-row-hover-bg-color: #363636;
     --menu-item-bg-color: #555;
-    --theme-color: #38bdf8;
+    --theme-color: #141519;
     --btn-default-bg: #222;
     --btn-default-color: #ccc;
     --btn-default-border-color: #555;
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #1c1b1b;
-    --highlight-foreground: #fff;
-    --highlight-gutter-background: #323131;
-    --highlight-gutter-foreground: #e8e8e8;
+    --highlight-background: #282c34;
+    --highlight-foreground: #abb2bf;
+    --highlight-gutter-background: #353941;
+    --highlight-gutter-foreground: #9da4b1;
     color-scheme: dark;
   }
   img {
@@ -413,113 +413,114 @@ code.hljs {
   padding: 3px 5px
 }
 /*!
-  Theme: Default
-  Description: Original highlight.js style
-  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-  Maintainer: @highlightjs/core-team
-  Website: https://highlightjs.org/
-  License: see project LICENSE
-  Touched: 2021
-*/
-/*
-This is left on purpose making default.css the single file that can be lifted
-as-is from the repository directly without the need for a build step
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
 
-Typically this "required" baseline CSS is added by `makestuff.js` during build.
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
 */
-pre code.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1em
-}
-code.hljs {
-  padding: 3px 5px
-}
-/* end baseline CSS */
 .hljs {
-  background: #F3F3F3;
-  color: #444
+  color: #24292e;
+  background: #ffffff
 }
-/* Base color: saturation 0; */
-.hljs-subst {
-  /* default */
-  
-}
-/* purposely ignored */
-.hljs-formula,
-.hljs-attr,
-.hljs-property,
-.hljs-params {
-  
-}
-.hljs-comment {
-  color: #697070
-}
-.hljs-tag,
-.hljs-punctuation {
-  color: #444a
-}
-.hljs-tag .hljs-name,
-.hljs-tag .hljs-attr {
-  color: #444
-}
-.hljs-keyword,
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-meta .hljs-keyword,
 .hljs-doctag,
-.hljs-name {
-  font-weight: bold
-}
-/* User color: hue: 0 */
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
 .hljs-template-tag,
-.hljs-deletion {
-  color: #880000
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
 }
 .hljs-title,
-.hljs-section {
-  color: #880000;
-  font-weight: bold
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
 }
 .hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-operator,
-.hljs-selector-pseudo {
-  color: #ab5656
-}
-/* Language color: hue: 90; */
-.hljs-literal {
-  color: #695
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
 }
 .hljs-built_in,
-.hljs-bullet,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.hljs-comment,
 .hljs-code,
-.hljs-addition {
-  color: #397300
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
 }
-/* Meta color: hue: 200 */
-.hljs-meta {
-  color: #1f7199
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
 }
-.hljs-meta .hljs-string {
-  color: #38a
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
 }
-/* Misc effects */
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
 .hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
   font-style: italic
 }
 .hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
   font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
 }
 @media (prefers-color-scheme: dark) {
 pre code.hljs {
@@ -530,99 +531,78 @@ pre code.hljs {
 code.hljs {
   padding: 3px 5px
 }
-/*!
-  Theme: StackOverflow Dark
-  Description: Dark theme as used on stackoverflow.com
-  Author: stackoverflow.com
-  Maintainer: @Hirse
-  Website: https://github.com/StackExchange/Stacks
-  License: MIT
-  Updated: 2021-05-15
+/*
 
-  Updated for @stackoverflow/stacks v0.64.0
-  Code Blocks: /blob/v0.64.0/lib/css/components/_stacks-code-blocks.less
-  Colors: /blob/v0.64.0/lib/css/exports/_stacks-constants-colors.less
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
 */
 .hljs {
-  /* var(--highlight-color) */
-  color: #ffffff;
-  /* var(--highlight-bg) */
-  background: #1c1b1b
+  color: #abb2bf;
+  background: #282c34
 }
-.hljs-subst {
-  /* var(--highlight-color) */
-  color: #ffffff
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+  font-style: italic
 }
-.hljs-comment {
-  /* var(--highlight-comment) */
-  color: #999999
-}
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-meta .hljs-keyword,
 .hljs-doctag,
-.hljs-section {
-  /* var(--highlight-keyword) */
-  color: #88aece
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd
 }
-.hljs-attr {
-  /* var(--highlight-attribute); */
-  color: #88aece
-}
-.hljs-attribute {
-  /* var(--highlight-symbol) */
-  color: #c59bc1
-}
+.hljs-section,
 .hljs-name,
-.hljs-type,
-.hljs-number,
-.hljs-selector-id,
-.hljs-quote,
-.hljs-template-tag {
-  /* var(--highlight-namespace) */
-  color: #f08d49
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75
 }
-.hljs-selector-class {
-  /* var(--highlight-keyword) */
-  color: #88aece
+.hljs-literal {
+  color: #56b6c2
 }
 .hljs-string,
 .hljs-regexp,
-.hljs-symbol,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+  color: #98c379
+}
+.hljs-attr,
 .hljs-variable,
 .hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr {
-  /* var(--highlight-variable) */
-  color: #b5bd68
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66
 }
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
 .hljs-meta,
-.hljs-selector-pseudo {
-  /* var(--highlight-keyword) */
-  color: #88aece
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee
 }
 .hljs-built_in,
-.hljs-title,
-.hljs-literal {
-  /* var(--highlight-literal) */
-  color: #f08d49
-}
-.hljs-bullet,
-.hljs-code {
-  /* var(--highlight-punctuation) */
-  color: #cccccc
-}
-.hljs-meta .hljs-string {
-  /* var(--highlight-variable) */
-  color: #b5bd68
-}
-.hljs-deletion {
-  /* var(--highlight-deletion) */
-  color: #de7176
-}
-.hljs-addition {
-  /* var(--highlight-addition) */
-  color: #76c490
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: #e6c07b
 }
 .hljs-emphasis {
   font-style: italic
@@ -630,14 +610,8 @@ code.hljs {
 .hljs-strong {
   font-weight: bold
 }
-.hljs-formula,
-.hljs-operator,
-.hljs-params,
-.hljs-property,
-.hljs-punctuation,
-.hljs-tag {
-  /* purposely ignored */
-  
+.hljs-link {
+  text-decoration: underline
 }
 }
 .highlight:hover .copy-btn,
@@ -1488,7 +1462,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ffff18;
+    background: #c42890;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1895,12 +1869,6 @@ pre code {
   color: #f00;
   display: inline-block;
   margin: 0 5px;
-}
-.busuanzi-count #busuanzi_container_site_uv {
-  display: none;
-}
-.busuanzi-count #busuanzi_container_site_pv {
-  display: none;
 }
 @keyframes icon-animate {
   0%, 100% {
@@ -2337,9 +2305,6 @@ pre code {
 .post-meta-break {
   flex-basis: 100%;
   height: 0;
-}
-#busuanzi_container_page_pv {
-  display: none;
 }
 .post-nav {
   border-top: 1px solid #eee;
@@ -3150,47 +3115,94 @@ header.header {
   }
 }
 :root {
-  --body-bg-color: #eef3f7;
+  --body-bg-color: #f6f4ef;
   --content-bg-color: #fff;
   --card-bg-color: #fff;
-  --text-color: #334155;
-  --link-color: #0e7490;
-  --link-hover-color: #155e75;
-  --brand-color: #0e7490;
-  --brand-hover-color: #155e75;
-  --selection-bg: #0e7490;
-  --selection-color: #fff;
-  --blockquote-color: #64748b;
+  --text-color: #3d3b36;
+  --link-color: #7a5c2e;
+  --link-hover-color: #5f4621;
+  --brand-color: #7a5c2e;
+  --brand-hover-color: #5f4621;
+  --selection-bg: #e7d9bd;
+  --selection-color: #2b2a27;
+  --blockquote-color: #8b8577;
   --menu-item-bg-color: #fff;
-  --theme-color: #0e7490;
+  --theme-color: #7a5c2e;
   --btn-default-bg: #fff;
-  --btn-default-color: #0e7490;
-  --btn-default-border-color: #0e7490;
-  --btn-default-hover-bg: #0e7490;
+  --btn-default-color: #7a5c2e;
+  --btn-default-border-color: #7a5c2e;
+  --btn-default-hover-bg: #7a5c2e;
   --btn-default-hover-color: #fff;
-  --btn-default-hover-border-color: #0e7490;
+  --btn-default-hover-border-color: #7a5c2e;
+  --highlight-background: #faf8f4;
+  --highlight-foreground: #45423c;
+  --highlight-gutter-background: #f2eee6;
+  --highlight-gutter-foreground: #9a9284;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-bg-color: #0f172a;
-    --content-bg-color: #1e293b;
-    --card-bg-color: #1e293b;
-    --text-color: #cbd5e1;
-    --link-color: #38bdf8;
-    --link-hover-color: #7dd3fc;
-    --brand-color: #38bdf8;
-    --brand-hover-color: #7dd3fc;
-    --selection-bg: #38bdf8;
-    --selection-color: #0f172a;
-    --blockquote-color: #94a3b8;
-    --menu-item-bg-color: #1e293b;
-    --theme-color: #38bdf8;
-    --btn-default-bg: #1e293b;
-    --btn-default-color: #38bdf8;
-    --btn-default-border-color: #38bdf8;
-    --btn-default-hover-bg: #38bdf8;
-    --btn-default-hover-color: #0f172a;
-    --btn-default-hover-border-color: #38bdf8;
+    --body-bg-color: #141519;
+    --content-bg-color: #1b1d22;
+    --card-bg-color: #1b1d22;
+    --text-color: #d8d4cc;
+    --link-color: #c9a876;
+    --link-hover-color: #e0c393;
+    --brand-color: #c9a876;
+    --brand-hover-color: #e0c393;
+    --selection-bg: #c9a876;
+    --selection-color: #141519;
+    --blockquote-color: #9a9387;
+    --menu-item-bg-color: #1b1d22;
+    --theme-color: #c9a876;
+    --btn-default-bg: #1b1d22;
+    --btn-default-color: #c9a876;
+    --btn-default-border-color: #c9a876;
+    --btn-default-hover-bg: #c9a876;
+    --btn-default-hover-color: #141519;
+    --btn-default-hover-border-color: #c9a876;
+    --highlight-background: #1a1d23;
+    --highlight-foreground: #c9c6c0;
+    --highlight-gutter-background: #16181d;
+    --highlight-gutter-foreground: #6f737b;
+  }
+}
+body {
+  background: linear-gradient(180deg, #f8f6f1 0%, #f3f0e9 100%);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(180deg, #16171b 0%, #101114 100%);
+  }
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.site-title,
+.post-title,
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6,
+.sitemap-year {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', 'Noto Serif SC', 'STSong', serif;
+}
+.site-title {
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #7a5c2e, #b3925c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+@media (prefers-color-scheme: dark) {
+  .site-title {
+    background: linear-gradient(90deg, #c9a876, #ecd9ae);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 }
 .post-block,
@@ -3198,13 +3210,19 @@ header.header {
 .sidebar,
 .header,
 .footer {
-  border-radius: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(125,115,95,0.12);
+  box-shadow: 0 1px 2px rgba(20,21,25,0.04), 0 8px 24px rgba(20,21,25,0.05);
 }
-.post-block,
-.sidebar,
-.header,
-.footer {
-  box-shadow: 0 4px 20px rgba(15,23,42,0.07);
+@media (prefers-color-scheme: dark) {
+  .post-block,
+  .posts-expand .post-block,
+  .sidebar,
+  .header,
+  .footer {
+    border-color: rgba(255,255,255,0.07);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.25);
+  }
 }
 .sitemap-page .sitemap-intro {
   color: var(--blockquote-color);
@@ -3228,7 +3246,7 @@ header.header {
   padding: 0.55em 0.9em;
   margin-bottom: 0.35em;
   background: var(--card-bg-color);
-  border: 1px solid rgba(100,116,139,0.18);
+  border: 1px solid rgba(125,115,95,0.16);
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
@@ -3257,9 +3275,10 @@ header.header {
   max-height: 480px;
   border-radius: 12px;
   background: #000;
-  box-shadow: 0 4px 16px rgba(15,23,42,0.15);
+  box-shadow: 0 4px 16px rgba(20,21,25,0.14);
 }
 .aplayer {
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(15,23,42,0.08);
+  border: 1px solid rgba(125,115,95,0.14);
+  box-shadow: 0 4px 16px rgba(20,21,25,0.08);
 }
